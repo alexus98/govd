@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: govd-bot
+    runtime: docker
+    repo: https://github.com/alexus98/govd
+    plan: free
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
